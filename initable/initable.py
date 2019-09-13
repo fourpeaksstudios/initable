@@ -1,6 +1,6 @@
 import inspect
 
-from .vendor import funcutils
+from ._vendor import funcutils
 
 
 class InitializableWrapper(object):
@@ -31,17 +31,17 @@ def get_class_defining_method(method):
     return getattr(method, '__objclass__', None)
 
 
-def initializable(func):
+def initializable(func, *args, **kwargs):
     @InitializableWrapper
     @funcutils.wraps(func)
     def wrapper(caller, *args, **kwargs):
         class_defining_wrapped = get_class_defining_method(func)
 
-        if not isinstance(caller, class_defining_wrapped):
+        if class_defining_wrapped is not None \
+                and not isinstance(caller, class_defining_wrapped):
             # create instance of method's defining class
             caller = class_defining_wrapped()
-
-        func(caller, *args, **kwargs)
+        caller.func(*args, **kwargs)
 
         return caller
 
