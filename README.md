@@ -3,8 +3,7 @@
   <a href=https://github.com/paysonwallach/initable/releases/latest>
     <img src=https://img.shields.io/github/v/release/paysonwallach/initable?style=flat-square>
   </a>
-  <a href=https://github.com/paysonwallach/initable/blob/master/LICENSE>
-    <img src=https://img.shields.io/github/license/paysonwallach/initable?style=flat-square>
+  <img src=https://img.shields.io/badge/license-HIP-994444?style=flat-square>
   </a>
   <a href=https://buymeacoffee.com/paysonwallach>
     <img src=https://img.shields.io/badge/donate-Buy%20me%20a%20coffee-yellow?style=flat-square>
@@ -66,4 +65,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[Initable](https://github.com/paysonwallach/initable) is licensed under the [GNU Public License v3](https://github.com/paysonwallach/initable/blob/master/LICENSE).
+[Initable](https://github.com/paysonwallach/initable) is licensed under the [Hippocratic License](https://firstdonoharm.dev).
