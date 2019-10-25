@@ -66,7 +66,7 @@ Please make sure to update tests as appropriate.
 
 ## Code of Conduct
 
-By participating in this project, you agree to abide by the terms of the [Code of Conduct](https://github.com/paysonwallach/venn/blob/master/CODE_OF_CONDUCT.md).
+By participating in this project, you agree to abide by the terms of the [Code of Conduct](https://github.com/paysonwallach/initable/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 [Initable](https://github.com/paysonwallach/initable) is licensed under the [Hippocratic License](https://firstdonoharm.dev).
