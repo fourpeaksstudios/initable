@@ -14,7 +14,7 @@ class InitializableWrapper(object):
         return self.wrapped.__get__(instance, owner)
 
 
-def get_class_defining_method(method):
+def _get_class_defining_method(method):
     if inspect.ismethod(method):
         for cls in inspect.getmro(method.__self__.__class__):
             if cls.__dict__.get(method.__name__) is method:
@@ -23,25 +23,27 @@ def get_class_defining_method(method):
     if inspect.isfunction(method):
         cls = getattr(
             inspect.getmodule(method),
-            method.__qualname__.split('.<locals>', 1)[0].rsplit('.', 1)[0]
+            method.__qualname__.split(".<locals>", 1)[0].rsplit(".", 1)[0],
         )
         if isinstance(cls, type):
             return cls
     # handle special descriptor objects
-    return getattr(method, '__objclass__', None)
+    return getattr(method, "__objclass__", None)
 
 
 def initializable(func, *args, **kwargs):
     @InitializableWrapper
     @funcutils.wraps(func)
     def wrapper(caller, *args, **kwargs):
-        class_defining_wrapped = get_class_defining_method(func)
+        class_defining_wrapped = _get_class_defining_method(func)
 
-        if class_defining_wrapped is not None \
-                and not isinstance(caller, class_defining_wrapped):
+        if class_defining_wrapped is not None and not isinstance(
+            caller, class_defining_wrapped
+        ):
             # create instance of method's defining class
             caller = class_defining_wrapped()
-        caller.func(*args, **kwargs)
+
+        func(caller, *args, **kwargs)
 
         return caller
 
