@@ -3,7 +3,7 @@ name = "initable"
 version = "0.1.2"
 description = "Initable is a Python package that helps create DRY-er classes."
 authors = ["Payson Wallach <paysonwallach@icloud.com>"]
-license = "GPL-3.0"
+license = "HIP"
 readme = "README.md"
 
 [tool.poetry.dependencies]
