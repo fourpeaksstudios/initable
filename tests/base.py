@@ -1,6 +1,7 @@
 from typing import List
 
-from initials import initializable
+from initable import initializable
+
 
 class TestClass(object):
     """docstring for TestClass."""

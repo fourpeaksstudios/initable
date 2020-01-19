@@ -1,3 +1,3 @@
-from .initials import initializable
+from .initable import initializable
 
 __all__ = [initializable]
