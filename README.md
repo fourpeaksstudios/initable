@@ -1,9 +1,9 @@
 <div align="center">
   <h1>Initable</h1>
-  <a href=https://github.com/paysonwallach/initable/releases/latest>
-    <img src=https://img.shields.io/github/v/release/paysonwallach/initable?style=flat-square>
+  <a href=https://github.com/fourpeaksstudios/initable/releases/latest>
+    <img src=https://img.shields.io/github/v/release/fourpeaksstudios/initable?style=flat-square>
   </a>
-  <a href=https://github.com/paysonwallach/initable/blob/master/LICENSE>
+  <a href=https://github.com/fourpeaksstudios/initable/blob/master/LICENSE>
     <img src=https://img.shields.io/badge/license-HIP-994444?style=flat-square>
   </a>
   <br>
@@ -11,11 +11,11 @@
   <br>
 </div>
 
-[Initable](https://github.com/paysonwallach/initable) is a Python package that helps create [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself)-er classes.
+[Initable](https://github.com/fourpeaksstudios/initable) is a Python package that helps create [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself)-er classes.
 
 ## Installation
 
-[Initable](https://github.com/paysonwallach/initable) is available through [pip](https://pypi.org/project/initable/).
+[Initable](https://github.com/fourpeaksstudios/initable) is available through [pip](https://pypi.org/project/initable/).
 
 ```sh
 pip install initable
@@ -86,8 +86,8 @@ Please make sure to update tests as appropriate.
 
 ## Code of Conduct
 
-By participating in this project, you agree to abide by the terms of the [Code of Conduct](https://github.com/paysonwallach/initable/blob/master/CODE_OF_CONDUCT.md).
+By participating in this project, you agree to abide by the terms of the [Code of Conduct](https://github.com/fourpeaksstudios/initable/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
-[Initable](https://github.com/paysonwallach/initable) is licensed under the [Hippocratic License](https://github.com/paysonwallach/initable/blob/master/LICENSE).
+[Initable](https://github.com/fourpeaksstudios/initable) is licensed under the [Hippocratic License](https://github.com/fourpeaksstudios/initable/blob/master/LICENSE).
