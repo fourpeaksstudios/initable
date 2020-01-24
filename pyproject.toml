@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "initable"
-version = "0.2.0"
+version = "0.2.1"
 description = "Initable is a Python package that helps create DRY-er classes."
-authors = ["Payson Wallach <paysonwallach@icloud.com>"]
+authors = ["Payson Wallach <payson@fourpeaksstudios.com>"]
 license = "HIP"
 readme = "README.md"
 
