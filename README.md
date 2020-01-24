@@ -21,6 +21,28 @@
 pip install initable
 ```
 
+### From source using [`poetry`](https://github.com/sdispater/poetry)
+
+__Note:__ It is recommended to build `initable` in a virtual environment due to dependency version requirements.
+
+From the root of the repository, install the necessary dependencies via `poetry`:
+
+```sh
+poetry install
+```
+
+Then, build the wheel:
+
+```sh
+poetry build
+```
+
+Finally, outside of your virtual environment, install the wheel using `pip`:
+
+```sh
+pip install dist/initable-<version>-py3-none-any.whl
+```
+
 ## Usage
 
 Define an instance method you would like to be able to initialize the class with as well.
